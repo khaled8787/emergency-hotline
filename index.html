@@ -9,15 +9,15 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav class="mx-10 mt-5">
-        <div class="flex justify-between items-center">
+    <nav class="mx-4 md:mx-10 mt-5">
+        <div class="flex justify-between">
             <div class="flex items-center">
                 <img class="h-[50px] w-[50px] mr-3" src="assets/logo.png" alt="">
                 <h3 class="text-2xl text-green-700 font-extrabold">Emergency<br> Service</h3>
             </div>
-            <div class="flex items-center gap-10">
+            <div class="mb-2 md:flex items-center gap-10">
                 <div class="flex gap-3 items-center bg-blue-100 px-7 py-2 rounded-lg">
-                    <p class="text-[23px] text-black font-bold">0</p>
+                    <p id="get-love" class="text-[23px] text-black font-bold">0</p>
                     <img class="h-[35px] w-[35px]" src="assets/heart.png" alt="">
                 </div>
                 <div class=" flex gap-3 items-center bg-blue-100 px-7 py-2 rounded-lg">
@@ -32,7 +32,7 @@
     </nav>
 
     <!-- section-1 -->
-        <div class="flex flex-col justify-center items-center mt-10 bg-[linear-gradient(to_right_,#013223,#006747,#013223)] py-10">
+        <div class="px-5 md:flex flex-col justify-center items-center mt-10 bg-[linear-gradient(to_right_,#013223,#006747,#013223)] py-10">
             <img class="h-[92px] w-[92px] opacity-100" src="assets/logo.png" alt="">
               <h2 class="font-semibold text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h2>
               <p class="font-semibold text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
@@ -40,10 +40,10 @@
 
     <!-- main section -->
      <section class=" bg-slate-200">
-     <div class="grid grid-cols-4 gap-10 p-10">
-        <div class="grid grid-cols-3 col-span-3 gap-5">
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10">
+        <div class="row-span-1 md:grid grid-cols-3 col-span-3 gap-5">
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -55,14 +55,14 @@
                 <p class="text-[28px] font-bold">999</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-60 rounded-lg">সার্বজনীন</p>
             </div>
-            <div>
-                <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/fire-service.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -74,14 +74,14 @@
                 <p class="text-[28px] font-bold">999</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">ফায়ার</p>
             </div>
-            <div>
-                <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/police.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -93,14 +93,14 @@
                 <p class="text-[28px] font-bold">999</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">পুলিশ</p>
             </div>
-            <div>
-               <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -112,14 +112,14 @@
                 <p class="text-[28px] font-bold">1994-999999</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">স্বাস্থ্য</p>
             </div>
-            <div>
-                <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -131,14 +131,14 @@
                 <p class="text-[28px] font-bold">109</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">সহায়তা</p>
             </div>
-            <div>
-               <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -150,14 +150,14 @@
                 <p class="text-[28px] font-bold">106</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">সরকারি</p>
             </div>
-            <div>
-                <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -169,14 +169,14 @@
                 <p class="text-[28px] font-bold">16216</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">বিদ্যুৎ</p>
             </div>
-            <div>
-               <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -188,14 +188,14 @@
                 <p class="text-[28px] font-bold">16445</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">এনজিও</p>
             </div>
-            <div>
-                <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
         
         <div class="flex flex-col gap-5 bg-white p-4 rounded-lg">
-            <div class="flex gap-60 items-center">
+            <div class="flex gap-40 items-center">
                 <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
@@ -207,14 +207,14 @@
                 <p class="text-[28px] font-bold">163</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">পরিবহন</p>
             </div>
-            <div>
-                <button class="btn btn-active px-12"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="btn btn-active btn-success px-12"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="w-full flex gap-1">
+                <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
+                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
      </div>
        
-     <div class=" row-span-3-span-3 bg-white p-4 rounded-lg">
+     <div class="col-span-3 sm:col-span-1 row-span-3 bg-white p-4 rounded-lg">
             <div class="flex gap-30 items-center">
                 <div class="flex items-center gap-2">
                     <i class="fa-regular fa-clock"></i>
@@ -229,6 +229,7 @@
         </div>
         </div>
      </section>
-
+     
+     <script src="index.js"></script>
 </body>
 </html>
