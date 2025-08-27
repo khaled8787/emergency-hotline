@@ -7,3 +7,50 @@ for(const heart of hearts){
         loveCounter.innerText = currentNumber + 1;
     })
 }
+
+const addAlert = document.getElementsByClassName('btn-success');
+for(const al of addAlert){
+    al.addEventListener('click', function(){
+        alert(al.dataset.alert);
+        const getCoin = document.getElementById('coin');
+        getInnerCoin = parseInt(getCoin.innerText);
+         if(getInnerCoin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই । কল করতে কম পক্ষে ২০ কয়েন লাগবে')
+        return;
+        }
+        getCoin.innerText = getInnerCoin - 20;
+    })
+}
+
+
+const callBtn = document.getElementsByClassName('btn-success');
+const historyList = document.getElementById('history-list');
+const clearBtn = document.getElementById('clear-history');
+
+
+for(btn of callBtn){
+    btn.addEventListener('click', function(){
+        const parent = this.closest('.flex.flex-col');
+       const name = parent.querySelector('.nam').innerText;
+       const number = parent.querySelector('.number').innerText;
+        
+
+        const now = new Date();
+        const time = now.toLocaleTimeString();
+
+        const li = document.createElement('li');
+        li.className = 'flex justify-between bg-gray-100 p-2 rounded';
+
+        li.innerHTML = `
+          <span class = "font-medium">
+                 ${name} - ${number}</span>
+                 <span class = "text-gray-500 text-sm ">${time}</span>
+        `;
+
+        historyList.appendChild(li);
+    })
+}
+
+clearBtn.addEventListener('click', function(){
+    historyList.innerHTML = '';
+})

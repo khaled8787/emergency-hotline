@@ -21,11 +21,11 @@
                     <img class="h-[35px] w-[35px]" src="assets/heart.png" alt="">
                 </div>
                 <div class=" flex gap-3 items-center bg-blue-100 px-7 py-2 rounded-lg">
-                    <p class="text-[23px] text-black font-bold">100</p>
+                    <p id="coin" class="text-[23px] text-black font-bold">100</p>
                     <img class="h-[35px] w-[35px]" src="assets/coin.png" alt="">
                 </div>
                 <div class="px-7 py-2 rounded-lg bg-green-700">
-                    <p class="text-[23px] text-white font-bold">0 copy</p>
+                    <p class="text-[23px] text-white font-bold"><span>0</span> copy</p>
                 </div>
             </div>
         </div>
@@ -48,16 +48,16 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">জাতীয় জরুরি সেবা</p>
+            <p class="nam text-[24px] font-bold">জাতীয় জরুরি সেবা</p>
             <p class="text-gray-500 mt-2">National Emergency</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">999</p>
+                <p class="number text-[28px] font-bold">999</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-60 rounded-lg">সার্বজনীন</p>
             </div>
             <div class="w-full flex gap-1">
                 <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
-                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-active btn-success w-[50%]" data-alert = 'Calling National Emergency Service 999'><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
@@ -67,16 +67,16 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">ফায়ার সার্ভিস</p>
+            <p class="nam text-[24px] font-bold">ফায়ার সার্ভিস</p>
             <p class="text-gray-500 mt-2">Fire Service</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">999</p>
+                <p class="number text-[28px] font-bold">999</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">ফায়ার</p>
             </div>
             <div class="w-full flex gap-1">
                 <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
-                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-active btn-success w-[50%]" data-alert="Calling Fire Service 999"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
@@ -86,16 +86,16 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">পুলিশ</p>
+            <p class="nam text-[24px] font-bold">পুলিশ</p>
             <p class="text-gray-500 mt-2">Police</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">999</p>
+                <p class="number text-[28px] font-bold">999</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">পুলিশ</p>
             </div>
             <div class="w-full flex gap-1">
                 <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
-                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-active btn-success w-[50%]" data-alert="Calling Police 999"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
@@ -105,16 +105,16 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">অ্যাম্বুলেন্স</p>
+            <p class="nam text-[24px] font-bold">অ্যাম্বুলেন্স</p>
             <p class="text-gray-500 mt-2">Ambulance</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">1994-999999</p>
+                <p class="number text-[28px] font-bold">1994-999999</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">স্বাস্থ্য</p>
             </div>
             <div class="w-full flex gap-1">
                 <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
-                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-active btn-success w-[50%]" data-alert="Calling Ambulance 1994-999999"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
@@ -124,16 +124,16 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">নারী ও শিশু সহায়তা</p>
-            <p class="text-gray-500 mt-2">Women & Child Helpline</p>
+            <p class="nam text-[24px] font-bold">নারী ও শিশু সহায়তা</p>
+            <p class="text-gray-500 mt-2">Calling Women & Child Helpline</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">109</p>
+                <p class="number text-[28px] font-bold">109</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">সহায়তা</p>
             </div>
             <div class="w-full flex gap-1">
                 <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
-                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-active btn-success w-[50%]" data-alert="Calling Woman & Children Helpline 109"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
@@ -143,16 +143,16 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">দুদক</p>
+            <p class="nam text-[24px] font-bold">দুদক</p>
             <p class="text-gray-500 mt-2">Anti-Corruption</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">106</p>
+                <p class="number text-[28px] font-bold">106</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">সরকারি</p>
             </div>
             <div class="w-full flex gap-1">
                 <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
-                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-active btn-success w-[50%]" data-alert="Calling Anti-Corruption 106"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
@@ -162,16 +162,16 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">বিদ্যুৎ বিভ্রাট</p>
+            <p class="nam text-[24px] font-bold">বিদ্যুৎ বিভ্রাট</p>
             <p class="text-gray-500 mt-2">Electricity Outage</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">16216</p>
+                <p class="number text-[28px] font-bold">16216</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">বিদ্যুৎ</p>
             </div>
             <div class="w-full flex gap-1">
                 <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
-                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-active btn-success w-[50%]" data-alert="Calling Electricity Outage 16216"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
 
@@ -181,11 +181,11 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">ব্র্যাক</p>
+            <p class="nam text-[24px] font-bold">ব্র্যাক</p>
             <p class="text-gray-500 mt-2">Brac</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">16445</p>
+                <p class="number text-[28px] font-bold">16445</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">এনজিও</p>
             </div>
             <div class="w-full flex gap-1">
@@ -200,16 +200,16 @@
                 <i class="text-xl fa-regular fa-heart"></i>
             </div>
             <div>
-            <p class="text-[24px] font-bold">বাংলাদেশ রেলওয়ে</p>
+            <p class="nam text-[24px] font-bold">বাংলাদেশ রেলওয়ে</p>
             <p class="text-gray-500 mt-2">Bangladesh Railway</p>
             </div>
             <div>
-                <p class="text-[28px] font-bold">163</p>
+                <p class="number text-[28px] font-bold">163</p>
                 <p class="text-gray-500 text-[15px] mt-2 p-2 bg-gray-200 mr-64 rounded-lg">পরিবহন</p>
             </div>
             <div class="w-full flex gap-1">
                 <button class="copy-btn btn btn-active w-[50%]"><i class="fa-regular fa-copy "></i> Copy</button>
-                <button class="btn btn-active btn-success w-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-active btn-success w-[50%]" data-alert="Calling Bangladesh Railway 163"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>
      </div>
@@ -220,11 +220,13 @@
                     <i class="fa-regular fa-clock"></i>
                     <p class="text-[16px] font-bold">Call History</p> 
             </div>
-                <button class="btn btn-error text-white">Clear</button>
+                <button id="clear-history" class="btn btn-error text-white">Clear</button>
 
             </div>
             
-            
+            <ul id="history-list">
+
+            </ul>
             
         </div>
         </div>
