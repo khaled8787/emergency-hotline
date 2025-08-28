@@ -39,7 +39,7 @@ for(btn of callBtn){
         const time = now.toLocaleTimeString();
 
         const li = document.createElement('li');
-        li.className = 'flex justify-between bg-gray-100 p-2 rounded';
+        li.className = 'flex justify-between bg-gray-100 p-2 rounded mt-3';
 
         li.innerHTML = `
           <span class = "font-medium">
@@ -54,3 +54,18 @@ for(btn of callBtn){
 clearBtn.addEventListener('click', function(){
     historyList.innerHTML = '';
 })
+
+
+const copyAll = document.getElementsByClassName('btn-active');
+for(copy of copyAll){
+      copy.addEventListener('click', function(){
+        if(this.classList.contains('copy-btn')){
+            const number = this.closest('.flex.flex-col').querySelector('.number').innerText;
+            navigator.clipboard.writeText(number);
+            alert(`"${number}" নাম্বার টি কপি করা হয়েছে`);
+        
+          const copyCounter = document.getElementById('count');
+        finalCount = parseInt(copyCounter.innerText);
+        copyCounter.innerText = finalCount + 1;}
+      })
+}
