@@ -39,4 +39,5 @@ Why is it useful : The code is short and clean. When you add a new element to th
 ans : 
 
 preventDefault() : Using preventDefault() stops the browser's default behavior.
+
 stopPropagation() : Using stopPropagation() stops the bubbling above the event.
